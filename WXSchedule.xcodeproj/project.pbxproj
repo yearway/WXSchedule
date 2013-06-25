@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAEAE055177745B2000F15CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAEAE054177745B2000F15CC /* Foundation.framework */; };
+		FAEAE066177745B2000F15CC /* WXSchedule.mm in Sources */ = {isa = PBXBuildFile; fileRef = FAEAE065177745B2000F15CC /* WXSchedule.mm */; };
+		FAEAE0701777468A000F15CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAEAE06F1777468A000F15CC /* UIKit.framework */; };
+		FAEAE07217774697000F15CC /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FAEAE07117774697000F15CC /* libsubstrate.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FAEAE051177745B2000F15CC /* WXSchedule.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = WXSchedule.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAEAE054177745B2000F15CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FAEAE059177745B2000F15CC /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		FAEAE05A177745B2000F15CC /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		FAEAE05C177745B2000F15CC /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		FAEAE060177745B2000F15CC /* WXSchedule.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = WXSchedule.plist; path = Package/Library/PreferenceLoader/Preferences/WXSchedule.plist; sourceTree = "<group>"; };
+		FAEAE061177745B2000F15CC /* WXScheduleIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WXScheduleIcon.png; path = Package/Library/PreferenceLoader/Preferences/WXScheduleIcon.png; sourceTree = "<group>"; };
+		FAEAE062177745B2000F15CC /* WXScheduleIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "WXScheduleIcon@2x.png"; path = "Package/Library/PreferenceLoader/Preferences/WXScheduleIcon@2x.png"; sourceTree = "<group>"; };
+		FAEAE063177745B2000F15CC /* WXSchedule-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WXSchedule-Prefix.pch"; sourceTree = "<group>"; };
+		FAEAE064177745B2000F15CC /* WXSchedule.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WXSchedule.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		FAEAE065177745B2000F15CC /* WXSchedule.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WXSchedule.mm; sourceTree = "<group>"; };
+		FAEAE069177745B2000F15CC /* WXSchedule.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = WXSchedule.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/WXSchedule.plist; sourceTree = "<group>"; };
+		FAEAE06F1777468A000F15CC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FAEAE07117774697000F15CC /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../../../opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAEAE04D177745B2000F15CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAEAE07217774697000F15CC /* libsubstrate.dylib in Frameworks */,
+				FAEAE0701777468A000F15CC /* UIKit.framework in Frameworks */,
+				FAEAE055177745B2000F15CC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAEAE046177745B2000F15CC = {
+			isa = PBXGroup;
+			children = (
+				FAEAE07117774697000F15CC /* libsubstrate.dylib */,
+				FAEAE06F1777468A000F15CC /* UIKit.framework */,
+				FAEAE056177745B2000F15CC /* WXSchedule */,
+				FAEAE053177745B2000F15CC /* Frameworks */,
+				FAEAE052177745B2000F15CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAEAE052177745B2000F15CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAEAE051177745B2000F15CC /* WXSchedule.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAEAE053177745B2000F15CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAEAE054177745B2000F15CC /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAEAE056177745B2000F15CC /* WXSchedule */ = {
+			isa = PBXGroup;
+			children = (
+				FAEAE064177745B2000F15CC /* WXSchedule.xm */,
+				FAEAE065177745B2000F15CC /* WXSchedule.mm */,
+				FAEAE057177745B2000F15CC /* Package */,
+				FAEAE05B177745B2000F15CC /* Supporting Files */,
+			);
+			path = WXSchedule;
+			sourceTree = "<group>";
+		};
+		FAEAE057177745B2000F15CC /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				FAEAE058177745B2000F15CC /* DEBIAN */,
+				FAEAE05D177745B2000F15CC /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		FAEAE058177745B2000F15CC /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				FAEAE059177745B2000F15CC /* control.txt */,
+				FAEAE05A177745B2000F15CC /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		FAEAE05B177745B2000F15CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAEAE05C177745B2000F15CC /* PackageVersion.plist */,
+				FAEAE063177745B2000F15CC /* WXSchedule-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAEAE05D177745B2000F15CC /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				FAEAE05E177745B2000F15CC /* PreferenceLoader */,
+				FAEAE067177745B2000F15CC /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		FAEAE05E177745B2000F15CC /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				FAEAE05F177745B2000F15CC /* Preferences */,
+			);
+			name = PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		FAEAE05F177745B2000F15CC /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				FAEAE060177745B2000F15CC /* WXSchedule.plist */,
+				FAEAE061177745B2000F15CC /* WXScheduleIcon.png */,
+				FAEAE062177745B2000F15CC /* WXScheduleIcon@2x.png */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		FAEAE067177745B2000F15CC /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				FAEAE068177745B2000F15CC /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		FAEAE068177745B2000F15CC /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				FAEAE069177745B2000F15CC /* WXSchedule.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FAEAE04E177745B2000F15CC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FAEAE050177745B2000F15CC /* WXSchedule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAEAE06C177745B2000F15CC /* Build configuration list for PBXNativeTarget "WXSchedule" */;
+			buildPhases = (
+				FAEAE04B177745B2000F15CC /* ShellScript */,
+				FAEAE04C177745B2000F15CC /* Sources */,
+				FAEAE04D177745B2000F15CC /* Frameworks */,
+				FAEAE04E177745B2000F15CC /* Headers */,
+				FAEAE04F177745B2000F15CC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WXSchedule;
+			productName = WXSchedule;
+			productReference = FAEAE051177745B2000F15CC /* WXSchedule.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAEAE047177745B2000F15CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = FAEAE04A177745B2000F15CC /* Build configuration list for PBXProject "WXSchedule" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FAEAE046177745B2000F15CC;
+			productRefGroup = FAEAE052177745B2000F15CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAEAE050177745B2000F15CC /* WXSchedule */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FAEAE04B177745B2000F15CC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		FAEAE04F177745B2000F15CC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAEAE04C177745B2000F15CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAEAE066177745B2000F15CC /* WXSchedule.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FAEAE06A177745B2000F15CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/include/**",
+					"/opt/theos/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		FAEAE06B177745B2000F15CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/include/**",
+					"/opt/theos/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		FAEAE06D177745B2000F15CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WXSchedule/WXSchedule-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 172.22.65.13;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		FAEAE06E177745B2000F15CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WXSchedule/WXSchedule-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 172.22.65.13;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAEAE04A177745B2000F15CC /* Build configuration list for PBXProject "WXSchedule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAEAE06A177745B2000F15CC /* Debug */,
+				FAEAE06B177745B2000F15CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAEAE06C177745B2000F15CC /* Build configuration list for PBXNativeTarget "WXSchedule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAEAE06D177745B2000F15CC /* Debug */,
+				FAEAE06E177745B2000F15CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAEAE047177745B2000F15CC /* Project object */;
+}
